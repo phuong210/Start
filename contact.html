@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container d-flex justify-space-between align-center">
+        <div class="header__logo d-flex">
+          <a href="index.html"><img src="./img/logo.svg" alt="START" /></a>
+          <h1 class="h1 fw-500 text-white">Start</h1>
+        </div>
+        <div class="header__menu">
+          <ul class="nav__menu d-flex">
+            <li><a class="subHd text-white" href="index.html">Home</a></li>
+            <li>
+              <a class="subHd text-white" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="subHd text-white" href="services.html">Services</a>
+            </li>
+            <li><a class="subHd text-white" href="contact.html">Contact</a></li>
+          </ul>
+          <p class="btnmenu"><span></span></p>
+        </div>
+      </div>
+    </header>
+    <nav class="nav__mobile">
+      <ul class="menu__mobile w-100">
+        <li class="menu__list">
+          <a href="index.html" class="text-uppercase">Home</a>
+        </li>
+        <li class="menu__list">
+          <a href="portfolio.html" class="text-uppercase">Portfolio</a>
+        </li>
+        <li class="menu__list">
+          <a href="services.html" class="text-uppercase">Services</a>
+        </li>
+        <li class="menu__list">
+          <a href="contact.html" class="text-uppercase">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="contact">
+        <div class="container">
+          <div class="d-flex flex-column align-center justify-center">
+            <h2 class="h1 font-crimson pb-16">Contact Us</h2>
+            <p class="subHd text-center contact__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col col-lg-6 contact__wrap-img">
+              <img
+                class="w-100 hg-100 fit-cover"
+                src="./img/map.png"
+                alt="START"
+              />
+            </div>
+            <div class="col col-lg-6">
+              <form class="contact__wrap-form w-100 hg-100">
+                <div class="form-group d-flex flex-column">
+                  <label for="name" class="subHd pb-16">Name</label>
+                  <input
+                    type="text"
+                    class="border-5"
+                    id="name"
+                    placeholder=""
+                  />
+                </div>
+                <div class="form-group d-flex flex-column">
+                  <label for="email" class="subHd pb-16">Email</label>
+                  <input
+                    type="email"
+                    class="border-5"
+                    id="email"
+                    placeholder=""
+                  />
+                </div>
+                <div class="form-group d-flex flex-column">
+                  <label for="message" class="subHd pb-16">Message</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    class="border-5"
+                    placeholder=""
+                  ></textarea>
+                </div>
+                <button type="submit" class="button button-black w-100 subHd">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="d-flex flex-column align-center footer">
+          <div class="footer__icons d-flex align-center">
+            <a href=""><img src="./img/fb.svg" alt="START" /></a>
+            <a href=""><img src="./img/instagram.svg" alt="START" /></a>
+            <a href=""><img src="./img/twitter.svg" alt="START" /></a>
+            <a href=""><img src="./img/pinterest.svg" alt="START" /></a>
+            <a href=""><img src="./img/tiktok.svg" alt="START" /></a>
+            <a href=""><img src="./img/whatapp.svg" alt="START" /></a>
+            <a href=""><img src="./img/youtube.svg" alt="START" /></a>
+          </div>
+          <p class="footer__copyright subHd text-white">
+            &copy Start, 2022. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
