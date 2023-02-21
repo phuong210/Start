@@ -33,9 +33,6 @@ a:hover,
 button:hover {
     opacity: 0.9;
 }
-img {
-    width: 100%;
-}
 
 html {
     font-size: 62.5%;
@@ -96,8 +93,22 @@ span {
 .h1 {
     font-size: 3rem;
 }
+.h2 {
+    font-size: 3.2rem;
+}
+
+.h3 {
+    font-size: 2.8rem;
+}
 .h4 {
     font-size: 2.4rem;
+}
+.h5 {
+    font-size: 2rem;
+}
+
+.h6 {
+    font-size: 1.6rem;
 }
 .text-price {
     font-weight: 700;
@@ -117,23 +128,6 @@ span {
     .h1 {
         font-size: 4rem;
     }
-
-    .h2 {
-        font-size: 3.2rem;
-    }
-
-    .h3 {
-        font-size: 2.8rem;
-    }
-
-    .h5 {
-        font-size: 2rem;
-    }
-
-    .h6 {
-        font-size: 1.6rem;
-    }
-
     .heading {
         font-size: 4rem;
     }
@@ -445,7 +439,6 @@ span {
 
 /* team */
 .team {
-    /* padding-top: 1rem; */
     padding-bottom: 4rem;
 }
 
@@ -466,7 +459,6 @@ span {
     box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding: 2rem 2.5rem 1.9rem 2.5rem;
-    /* margin-inline: 3rem; */
 }
 
 .team__card-img {
@@ -577,10 +569,6 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-/* .contact__desc {
-    padding-bottom: 3.9rem;
-} */
-
 .form-group {
     padding-bottom: 2.1rem;
 }
@@ -659,14 +647,10 @@ footer {
     }
 
     .team {
-        /* padding-top: 7.8rem; */
         padding-bottom: 5.4rem;
         --gap: 4.7rem;
         --height: 12.3rem;
     }
-    /* .team__card {
-        margin-inline: 0;
-    } */
 
     .team__content {
         padding-bottom: 4.5rem;
@@ -740,10 +724,6 @@ footer {
     .contact__content {
         padding-bottom: 6.7rem;
     }
-
-    /* .contact__desc {
-        padding-bottom: 5.7rem;
-    } */
 
     .contact__wrap-img {
         order: 1;
