@@ -14,6 +14,8 @@
     --dark25-cl: rgba(33, 37, 41, 0.25);
     --white25-cl: rgba(255, 255, 255, 0.25);
     --green25-cl: rgba(116, 198, 157, 0.25);
+
+    --height: 7rem;
 }
 
 * {
@@ -308,6 +310,12 @@ h6,
     background: var(--green-cl);
     padding-top: 1.7rem;
     padding-bottom: 1.7rem;
+    height: var(--height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .header__logo a {
@@ -372,7 +380,7 @@ h6,
     width: 100vw;
     position: fixed;
     background: rgba(0, 0, 0, 0.4);
-    top: 7.6rem;
+    top: var(--height);
     left: 0;
     right: 0;
     bottom: 0;
@@ -411,6 +419,7 @@ h6,
     background: var(--green-cl);
     padding-top: 1.5rem;
     padding-bottom: 4.039rem;
+    margin-top: var(--height);
 }
 
 .banner h3 {
@@ -611,6 +620,7 @@ footer {
     .header {
         padding-top: 3.5rem;
         padding-bottom: 3.8rem;
+        --height: 12.3rem;
     }
 
     .header__logo a img {
@@ -630,6 +640,7 @@ footer {
         padding-top: 0;
         padding-bottom: 8.287rem;
         --gap: 12rem;
+        --height: 12.3rem;
     }
     .banner h3 {
         padding-top: 0;
