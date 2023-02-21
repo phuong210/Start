@@ -29,6 +29,10 @@ a {
     text-decoration: none;
     color: var(--black-cl);
 }
+a:hover,
+button:hover {
+    opacity: 0.9;
+}
 img {
     width: 100%;
 }
@@ -592,6 +596,7 @@ footer {
 }
 .contact__btn {
     width: 100%;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
