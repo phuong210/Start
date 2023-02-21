@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
 
 :root {
     --dark-cl: #212529;
@@ -499,7 +498,7 @@ h6,
     width: 17.5rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 1px solid #d9d9d9;
+    border: 1px solid var(--black-cl);
 }
 
 .team__card-content {
