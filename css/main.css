@@ -27,7 +27,7 @@
 
 a {
     text-decoration: none;
-    /* color: var(--black-cl); */
+    color: var(--black-cl);
 }
 
 html {
@@ -63,51 +63,50 @@ h6,
 .h4,
 .h5,
 .h6,
-.label {
+.label,
+.sub-heading {
     font-family: "Work Sans", sans-serif;
     line-height: 1.25;
-    color: var(--black-cl);
     font-weight: 700;
 }
-
-.subHd {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    color: var(--black-cl);
+p,
+span {
     line-height: 1.25;
+}
+
+.sub-heading {
+    font-weight: 400;
     font-size: 2rem;
 }
 
 .label {
-    /* font-family: "Work Sans", sans-serif; */
-    /* font-weight: 700; */
-    letter-spacing: 5px;
-    font-size: 1.6rem;
-    /* line-height: 1.25; */
-    /* color: var(--black-cl); */
-}
-
-.h1 {
-    font-size: 3rem;
-}
-
-.heading {
-    font-size: 2.8rem;
-    font-family: "Crimson Text", serif;
-}
-
-.sub-heading {
     font-size: 1.6rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     color: var(--green-cl);
 }
 
-@media (min-width: 1024px) {
-    .label {
-        font-size: 1.6rem;
-    }
+.h1 {
+    font-size: 3rem;
+}
+.h4 {
+    font-size: 2.4rem;
+}
+.text-price {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: var(--black-cl);
+}
+.heading {
+    font-size: 2.4rem;
+    font-family: "Crimson Text", serif;
+}
+.heading-banner {
+    font-size: 2.8rem;
+}
 
+@media (min-width: 1024px) {
     .h1 {
         font-size: 4rem;
     }
@@ -118,10 +117,6 @@ h6,
 
     .h3 {
         font-size: 2.8rem;
-    }
-
-    .h4 {
-        font-size: 2.4rem;
     }
 
     .h5 {
@@ -216,7 +211,9 @@ h6,
 .mr-30 {
     margin-right: 3rem;
 }
-
+.pr-10 {
+    padding-right: 1rem;
+}
 .pb-10 {
     padding-bottom: 1rem;
 }
@@ -243,6 +240,9 @@ h6,
 
 .pb-20 {
     padding-bottom: 2rem;
+}
+.pb-25 {
+    padding-bottom: 2.5rem;
 }
 
 .pb-55 {
@@ -287,7 +287,7 @@ h6,
     z-index: 1;
 }
 
-.header__logo a {
+.header__logo img {
     padding-right: 1rem;
 }
 
@@ -349,17 +349,18 @@ h6,
     width: 100vw;
     position: fixed;
     background: rgba(0, 0, 0, 0.4);
-    top: var(--height);
+    /* top: var(--height); */
+    top: 8rem;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 300;
-    transition: 0.7s;
 }
 
 .nav__mobile.active {
     opacity: 1;
     pointer-events: auto;
+    transition: 0.7s;
 }
 
 .menu__mobile {
@@ -377,9 +378,11 @@ h6,
 .menu__list a {
     padding: 1.5rem;
 }
-
+.menu__list a:hover {
+    opacity: 0.7;
+}
 .menu__list a.active {
-    transition: 0.7s;
+    /* transition: 0.7s; */
     opacity: 0.7;
 }
 
@@ -396,13 +399,13 @@ h6,
 }
 
 .banner__content-desc {
-    padding-bottom: 2.5rem;
+    color: var(--white75-cl);
 }
 
 /* partners */
 .partners {
     padding-top: 2.2rem;
-    padding-bottom: 2.2rem;
+    padding-bottom: 5.955rem;
 }
 
 .partners__wrap {
@@ -417,40 +420,34 @@ h6,
 
 /* wrap */
 .wrap {
-    padding-top: 3.8rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
 }
-
 .wrap-second {
-    padding-top: 3rem;
+    padding-bottom: 7.613rem;
 }
-
 .wrap__content {
-    padding-top: 3rem;
+    max-width: 47rem;
+    margin-left: auto;
 }
-
-.wrap__content-hd {
-    font-size: 2.4rem;
-    line-height: 1.25;
-    font-weight: 700;
-    color: var(--dark-cl);
-    font-family: "Crimson Text", serif;
+.wrap__content-second {
+    margin-left: 0;
 }
-
 .wrap__content-desc {
-    /* padding-top: 2rem;
-    padding-bottom: 2rem; */
     color: var(--dark50-cl);
 }
 
 /* team */
 .team {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     padding-bottom: 4rem;
 }
 
 .team__wrap-item {
     margin-bottom: 3.5rem;
+    --gap: 10rem;
+}
+.team__wrap-item:last-child {
+    margin-bottom: 0;
 }
 
 .team__content {
@@ -462,7 +459,7 @@ h6,
     box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding: 2rem 2.5rem 1.9rem 2.5rem;
-    margin-inline: 3rem;
+    /* margin-inline: 3rem; */
 }
 
 .team__card-img {
@@ -483,12 +480,12 @@ h6,
     padding-top: 1.9rem;
 }
 
-.team__card-content p {
+.team__card-desc {
     padding-top: 1.7rem;
+    color: var(--dark75-cl);
 }
-
 .team__btn {
-    margin-top: 1rem;
+    margin-top: 4.5rem;
 }
 
 footer {
@@ -565,14 +562,17 @@ footer {
     --gap: 3rem;
     margin-top: var(--height);
 }
+.contact__content {
+    padding-bottom: 3.9rem;
+}
 
 .contact__wrap-img {
     margin-bottom: 1.5rem;
 }
 
-.contact__desc {
+/* .contact__desc {
     padding-bottom: 3.9rem;
-}
+} */
 
 .form-group {
     padding-bottom: 2.1rem;
@@ -587,6 +587,15 @@ footer {
 .form-group input {
     height: 3.8rem;
 }
+.contact__btn {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .team__wrap-item {
+        --gap: 3.5rem;
+    }
+}
 
 @media (min-width: 1024px) {
     .header {
@@ -595,7 +604,7 @@ footer {
         --height: 12.3rem;
     }
 
-    .header__logo a img {
+    .header__logo img {
         width: 7rem;
     }
 
@@ -625,41 +634,30 @@ footer {
 
     .partners {
         padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-bottom: 7.3rem;
     }
 
     .wrap {
-        padding-top: 1.3rem;
+        padding-bottom: 7.257rem;
     }
 
     .wrap-second {
-        padding-top: 4.357rem;
+        padding-bottom: 10.327rem;
     }
-
-    .wrap__content {
-        padding-top: 0;
-        padding-left: 7rem;
-    }
-
     .wrap__content-desc {
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
     }
 
-    .wrap__content-hd {
-        font-size: 4rem;
-    }
-
     .team {
-        padding-top: 7.8rem;
+        /* padding-top: 7.8rem; */
         padding-bottom: 5.4rem;
         --gap: 4.7rem;
         --height: 12.3rem;
     }
-
-    .team__card {
+    /* .team__card {
         margin-inline: 0;
-    }
+    } */
 
     .team__content {
         padding-bottom: 4.5rem;
@@ -667,10 +665,7 @@ footer {
 
     .team__wrap-item {
         margin-bottom: 0;
-    }
-
-    .team__btn {
-        margin-top: 4.5rem;
+        --gap: 4.7rem;
     }
 
     footer {
@@ -706,13 +701,11 @@ footer {
     .portfolio__wrap-item {
         margin-bottom: 5.5rem;
     }
-
     .portfolio__wrap-item:last-child {
         margin-bottom: 5.5rem;
     }
-
     .portfolio__btn {
-        margin-top: 0.8rem;
+        margin-top: 1rem;
     }
 
     .services {
@@ -735,12 +728,16 @@ footer {
         padding-bottom: 9.3rem;
         --height: 12.3rem;
     }
-
-    .contact__desc {
-        padding-bottom: 5.7rem;
+    .contact__content {
+        padding-bottom: 6.7rem;
     }
+
+    /* .contact__desc {
+        padding-bottom: 5.7rem;
+    } */
 
     .contact__wrap-img {
         order: 1;
+        margin-bottom: 0;
     }
 }

@@ -11,20 +11,28 @@
   <body>
     <header class="header">
       <div class="container d-flex justify-space-between align-center">
-        <div class="header__logo d-flex">
-          <a href="index.html"><img src="./img/logo.svg" alt="START" /></a>
+        <a href="index.html" class="header__logo d-flex">
+          <img src="./img/logo.svg" alt="START" />
           <h1 class="h1 fw-500 text-white">Start</h1>
-        </div>
+        </a>
         <div class="header__menu">
           <ul class="nav__menu d-flex">
-            <li><a class="subHd text-white" href="index.html">Home</a></li>
             <li>
-              <a class="subHd text-white" href="portfolio.html">Portfolio</a>
+              <a class="sub-heading text-white" href="index.html">Home</a>
             </li>
             <li>
-              <a class="subHd text-white" href="services.html">Services</a>
+              <a class="sub-heading text-white" href="portfolio.html"
+                >Portfolio</a
+              >
             </li>
-            <li><a class="subHd text-white" href="contact.html">Contact</a></li>
+            <li>
+              <a class="sub-heading text-white" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="sub-heading text-white" href="contact.html">Contact</a>
+            </li>
           </ul>
           <p class="btnmenu"><span></span></p>
           <nav class="nav__mobile">
@@ -46,14 +54,13 @@
         </div>
       </div>
     </header>
-
     <main>
       <section class="portfolio">
         <div class="container">
           <div class="d-flex flex-column align-center justify-center">
-            <h3 class="sub-heading">Works</h3>
+            <h3 class="label">Works</h3>
             <h2 class="heading pt-16 pb-16">Portfolio</h2>
-            <p class="subHd text-center max-width">
+            <p class="sub-heading text-center max-width">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
@@ -118,9 +125,8 @@
             </div>
           </div>
           <div class="portfolio__btn d-flex align-center justify-center">
-            <a href="" class="button button-black subHd">Learn More</a>
+            <a href="" class="button button-black sub-heading">Learn More</a>
           </div>
-          <!-- <a href="" class="button button-black portfolio__btn">Learn More</a> -->
         </div>
       </section>
     </main>
@@ -136,7 +142,7 @@
             <a href=""><img src="./img/whatapp.svg" alt="START" /></a>
             <a href=""><img src="./img/youtube.svg" alt="START" /></a>
           </div>
-          <p class="footer__copyright subHd text-white">
+          <p class="footer__copyright sub-heading text-white">
             &copy Start, 2022. All rights reserved.
           </p>
         </div>
