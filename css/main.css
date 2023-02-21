@@ -25,31 +25,9 @@
     padding: 0;
 }
 
-/* html,
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-footer,
-header {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-} */
-
 a {
     text-decoration: none;
-    color: var(--black-cl);
+    /* color: var(--black-cl); */
 }
 
 html {
@@ -84,7 +62,8 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+.label {
     font-family: "Work Sans", sans-serif;
     line-height: 1.25;
     color: var(--black-cl);
@@ -100,12 +79,12 @@ h6,
 }
 
 .label {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 700;
+    /* font-family: "Work Sans", sans-serif; */
+    /* font-weight: 700; */
     letter-spacing: 5px;
     font-size: 1.6rem;
-    line-height: 1.25;
-    color: var(--black-cl);
+    /* line-height: 1.25; */
+    /* color: var(--black-cl); */
 }
 
 .h1 {
@@ -114,15 +93,11 @@ h6,
 
 .heading {
     font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.25;
     font-family: "Crimson Text", serif;
 }
 
 .sub-heading {
     font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.25;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     color: var(--green-cl);
@@ -283,22 +258,15 @@ h6,
     display: inline-block;
     background: var(--white-cl);
     border-radius: 0.5rem;
-    padding: 1.3rem 4.85rem 1rem 4.75rem;
-    /* padding-top: 1.3rem; */
-    /* padding-bottom: 1rem; */
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    width: 17rem;
+    text-align: center;
 }
 
 .button-black {
     color: var(--white-cl);
     background: var(--dark-cl);
-    padding-left: 2.95rem;
-    padding-right: 2.95rem;
-}
-
-.btn-middle {
-    width: max-content;
-    display: flex;
-    margin: 0 auto;
 }
 
 .max-width {
@@ -541,6 +509,7 @@ footer {
 .portfolio {
     padding-top: 3.4rem;
     padding-bottom: 3rem;
+    margin-top: var(--height);
 }
 
 .portfolio__wrap {
@@ -569,6 +538,7 @@ footer {
     padding-top: 2.1rem;
     padding-bottom: 6.8rem;
     --gap: 4rem;
+    margin-top: var(--height);
 }
 
 .services__wrap {
@@ -593,6 +563,7 @@ footer {
     padding-top: 3.6rem;
     padding-bottom: 5.9rem;
     --gap: 3rem;
+    margin-top: var(--height);
 }
 
 .contact__wrap-img {
@@ -640,7 +611,6 @@ footer {
     .banner {
         padding-top: 0;
         padding-bottom: 8.287rem;
-        --gap: 12rem;
         --height: 12.3rem;
     }
     .banner h3 {
@@ -651,8 +621,6 @@ footer {
     }
     .banner__item {
         order: -1;
-        display: flex;
-        align-items: center;
     }
 
     .partners {
@@ -686,6 +654,7 @@ footer {
         padding-top: 7.8rem;
         padding-bottom: 5.4rem;
         --gap: 4.7rem;
+        --height: 12.3rem;
     }
 
     .team__card {
@@ -727,6 +696,7 @@ footer {
         padding-top: 3rem;
         padding-bottom: 10rem;
         --gap: 5.5rem;
+        --height: 12.3rem;
     }
 
     .portfolio__wrap {
@@ -749,6 +719,7 @@ footer {
         padding-top: 3.5rem;
         padding-bottom: 13.5rem;
         --gap: 10.5rem;
+        --height: 12.3rem;
     }
 
     .services__wrap {
@@ -762,6 +733,7 @@ footer {
     .contact {
         padding-top: 3rem;
         padding-bottom: 9.3rem;
+        --height: 12.3rem;
     }
 
     .contact__desc {

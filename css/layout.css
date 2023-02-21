@@ -14,10 +14,10 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-inline: calc(-1 * (var(--gap)/2));
+    margin-inline: calc(-1 * (var(--gap) / 2));
 }
 .col {
-    padding-inline: calc((var(--gap))/2);
+    padding-inline: calc((var(--gap)) / 2);
     flex: 1 0 auto;
     width: 100%;
     max-width: 100%;
@@ -140,9 +140,17 @@
         width: calc(100% / 12 * 4);
         max-width: calc(100% / 12 * 4);
     }
+    .col-lg-45 {
+        width: 45%;
+        max-width: 45%;
+    }
     .col-lg-5 {
         width: calc(100% / 12 * 5);
         max-width: calc(100% / 12 * 5);
+    }
+    .col-lg-55 {
+        width: 55%;
+        max-width: 55%;
     }
     .col-lg-6 {
         width: calc(100% / 12 * 6);
