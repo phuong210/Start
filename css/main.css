@@ -297,6 +297,7 @@ span {
 }
 
 .btnmenu {
+    cursor: pointer;
     width: 2rem;
     height: 2rem;
     overflow: hidden;
@@ -424,9 +425,10 @@ span {
     padding-bottom: 6rem;
 }
 .wrap-second {
-    padding-bottom: 7.613rem;
+    padding-bottom: 4.013rem;
 }
 .wrap__content {
+    padding-top: 3.366rem;
     max-width: 47rem;
     margin-left: auto;
 }
@@ -553,6 +555,8 @@ footer {
 
 .services__list {
     padding-bottom: 4.8rem;
+    margin: 0 auto;
+    max-width: 28rem;
 }
 
 .contact {
@@ -577,6 +581,12 @@ footer {
 .form-group textarea {
     background: #eeeeee;
     border: 1px solid #000000;
+    outline: unset;
+    padding: 2px;
+}
+.form__group input:focus {
+    border: unset;
+    outline: unset;
 }
 
 .form-group input {
@@ -636,6 +646,9 @@ footer {
 
     .wrap {
         padding-bottom: 7.257rem;
+    }
+    .wrap__content {
+        padding-top: 0;
     }
 
     .wrap-second {
