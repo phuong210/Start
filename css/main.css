@@ -214,6 +214,9 @@ span {
 .mt-16 {
     margin-top: 1.6rem;
 }
+.mb-16 {
+    margin-bottom: 1.6rem;
+}
 .mt-25 {
     margin-top: 2.5rem;
 }
@@ -677,10 +680,10 @@ footer {
     .wrap-second {
         padding-bottom: 10.327rem;
     }
-    .wrap__content-desc {
+    /* .wrap__content-desc {
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
-    }
+    } */
 
     .team {
         padding-bottom: 5.4rem;
