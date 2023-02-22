@@ -208,6 +208,15 @@ span {
 }
 
 /* spacing */
+.mt-15 {
+    margin-top: 1.5rem;
+}
+.mt-16 {
+    margin-top: 1.6rem;
+}
+.mt-25 {
+    margin-top: 2.5rem;
+}
 .ml-30 {
     margin-left: 3rem;
 }
