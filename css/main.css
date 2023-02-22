@@ -33,6 +33,9 @@ a:hover,
 button:hover {
     opacity: 0.9;
 }
+img {
+    max-width: 100%;
+}
 
 html {
     font-size: 62.5%;
@@ -395,7 +398,9 @@ span {
     padding-bottom: 4.039rem;
     margin-top: var(--height);
 }
-
+.banner img {
+    aspect-ratio: 1.7;
+}
 .banner h3 {
     padding-top: 3rem;
 }
@@ -423,6 +428,9 @@ span {
 /* wrap */
 .wrap {
     padding-bottom: 6rem;
+}
+.wrap img {
+    aspect-ratio: 1.4;
 }
 .wrap-second {
     padding-bottom: 4.013rem;
