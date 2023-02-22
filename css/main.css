@@ -612,9 +612,9 @@ footer {
     .team__wrap-item {
         --gap: 3.5rem;
     }
-    .team__wrap-item:last-child {
+    /* .team__wrap-item:last-child {
         margin-bottom: 3.5rem;
-    }
+    } */
 }
 
 @media (min-width: 1024px) {
@@ -722,7 +722,7 @@ footer {
         margin-bottom: 5.5rem;
     }
     .portfolio__wrap-item:last-child {
-        margin-bottom: 5.5rem;
+        margin-bottom: 0rem;
     }
     .portfolio__btn {
         margin-top: 1rem;
